@@ -359,29 +359,11 @@ void setup()
   Serial.println(watch.getAddress()); // mac address, call after begin()
 
   watch.setBattery(80); // set the battery level, will be synced to the app
-  //    for(int i =0 ; i< 39; i++){
-  //      if(i== DirectionStart || i == DirectionEnd || i == DirectionVia){
-  //        continue;
-  //      }
-  //      const uint8_t* imageProgmem = ImageFromDirection(i);
-  //        if (imageProgmem)
-  //        {
-  //          Serial.println(directionImagesString[i]);
-  //            Draw4bitImageProgmem(96, 64, 64, 64, imageProgmem);
-  //             DisplayBuffers();
-  //             myfont.print(64, 138, "Nguyễn Tiệm", WHITE, BLACK);
-  //        }
-  //        delay(1000);
-  //    }
+
 
   Draw565ImageProgmem(0, 0, 240, 240, IMG_GGMap);
   DisplayBuffers();
-  //  clearBuff();
-  //  delay(2000);
 
-  //  Draw4bitImageProgmem(64, 64, 64, 64, IMG_goHead);
-
-  //  DisplayBuffers();
 
 }
 
